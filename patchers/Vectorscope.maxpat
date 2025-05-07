@@ -50,7 +50,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 405.0, 124.0, 8.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 0.0, 8.0, 161.0 ],
+					"presentation_rect" : [ 157.0, 4.0, 8.0, 153.0 ],
 					"saved_attribute_attributes" : 					{
 						"bgcolor" : 						{
 							"expression" : "themecolor.live_lcd_bg"
@@ -73,7 +73,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 272.0, 209.0, 121.0, 8.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 161.0, 161.0, 8.0 ],
+					"presentation_rect" : [ 8.0, 157.0, 153.0, 8.0 ],
 					"saved_attribute_attributes" : 					{
 						"bgcolor" : 						{
 							"expression" : "themecolor.live_lcd_bg"
@@ -215,7 +215,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-13",
@@ -3818,7 +3817,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 107.0, 326.0, 708.0, 20.0 ],
-					"text" : "jit.gl.mesh ---scope @draw_mode points @point_size 1 @blend_enable 1 @depth_enable 0 @smooth_shading 0 @antialias 1 @rotatexyz 0 180 45 @layer 2"
+					"text" : "jit.gl.mesh ---scope @draw_mode points @point_size 3 @blend_enable 1 @depth_enable 0 @smooth_shading 0 @antialias 1 @rotatexyz 0 180 45 @layer 2"
 				}
 
 			}
@@ -3859,7 +3858,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 464.0, 204.0, 80.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 161.0, 161.0 ],
+					"presentation_rect" : [ 8.0, 4.0, 149.0, 149.0 ],
 					"saved_attribute_attributes" : 					{
 						"bordercolor" : 						{
 							"expression" : "themecolor.live_lcd_bg"
