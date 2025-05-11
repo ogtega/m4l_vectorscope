@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 958.0, 295.0, 401.0, 287.0 ],
+		"rect" : [ 845.0, 196.0, 917.0, 689.0 ],
 		"openrect" : [ 0.0, 0.0, 169.0, 169.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,30 @@
 		"subpatcher_template" : "audiostart",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bordercolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
+					"dstrect" : [ 0, 0, 480, 480 ],
+					"id" : "obj-13",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 533.0, 215.0, 63.41463565826416, 59.146342873573303 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 8.0, 145.0, 145.0 ],
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_lcd_bg"
+						}
+
+					}
+,
+					"srcrect" : [ 0, 0, 480, 480 ],
+					"sync" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
@@ -78,7 +102,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 551.965757608413696, 447.826090693473816, 115.068484783172607, 27.397258281707764 ],
+					"patching_rect" : [ 557.0, 448.0, 115.068484783172607, 27.397258281707764 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 153.0, 8.0, 4.0, 145.0 ],
 					"proportion" : 0.39,
@@ -299,8 +323,18 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 537.0, 280.0, 79.0, 22.0 ],
+									"text" : "s ---col_onbg"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "newobj",
@@ -649,6 +683,14 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"order" : 1,
+									"source" : [ "obj-108", 5 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"order" : 1,
 									"source" : [ "obj-108", 7 ]
@@ -695,6 +737,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
+									"order" : 0,
 									"source" : [ "obj-108", 5 ]
 								}
 
@@ -3695,7 +3738,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 671.0, 100.0, 51.0, 20.0 ],
+					"patching_rect" : [ 482.0, 96.0, 51.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3787,8 +3830,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 107.0, 326.0, 784.0, 20.0 ],
-					"text" : "jit.gl.mesh ---scope @draw_mode points @point_size 6 @blend_enable 1 @depth_enable 0 @smooth_shading 0 @antialias 1 @rotatexyz 0 180 45 @position 0 -1 0 @layer 2"
+					"patching_rect" : [ 107.0, 337.0, 702.0, 20.0 ],
+					"text" : "jit.gl.mesh ---scope @draw_mode points @point_size 6 @blend_enable 1 @depth_enable 0 @smooth_shading 0 @antialias 1 @position 0 -0.75 0 @layer 2"
 				}
 
 			}
@@ -3821,36 +3864,14 @@
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ],
-					"id" : "obj-13",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 533.0, 215.0, 80.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 8.0, 145.0, 145.0 ],
-					"saved_attribute_attributes" : 					{
-						"bordercolor" : 						{
-							"expression" : "themecolor.live_lcd_bg"
-						}
-
-					}
-,
-					"sync" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-8",
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "bang", "" ],
-					"patching_rect" : [ 533.0, 169.0, 469.0, 31.0 ],
-					"text" : "jit.world ---scope @output_texture 1 @sync 0 @floating 0 @esc_fullscreen 0 @visible 0 @size 500 500 @enable 1"
+					"patching_rect" : [ 533.0, 169.0, 468.626015663146973, 31.0 ],
+					"text" : "jit.world ---scope @output_texture 1 @sync 0 @floating 0 @esc_fullscreen 0 @visible 0 @size 960 960 @enable 1 @border 0"
 				}
 
 			}
@@ -3919,7 +3940,7 @@
 										}
 ,
 										"classnamespace" : "dsp.gen",
-										"rect" : [ 1219.0, 298.0, 824.0, 620.0 ],
+										"rect" : [ 1491.0, 281.0, 824.0, 620.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 10.0,
@@ -3963,7 +3984,7 @@
 											}
 , 											{
 												"box" : 												{
-													"code" : "mag = in1;\nangle = in2;\n\n// Cartesian convert \nx = mag * sin(angle);\ny = mag * cos(angle);\r\n\r\nif (y < -x) {\n    tmp = x;\n    x = -y;\n    y = -tmp;\n}\n\nout1 = x;\nout2 = y;\n",
+													"code" : "mag = in1;\nangle = 2 * pi - in2 + pi / 4;\r\n\r\n// if the angle is between 3pi/4 and 7pi/4\r\n// subtract pi from angle\r\n\n// Cartesian convert \nx = mag * sin(angle);\ny = mag * cos(angle);\r\n\r\nif (y < 0) {\r\n\tx = -1 * x;\r\n\ty = -1 * y;\r\n}\n\nout1 = x;\nout2 = y;\n",
 													"fontface" : 0,
 													"fontname" : "<Monospaced>",
 													"fontsize" : 10.0,
@@ -5147,7 +5168,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -5155,7 +5176,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -5205,7 +5226,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -5213,7 +5234,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -5356,7 +5377,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 767.5, 214.982456207275391, 880.5, 214.982456207275391 ],
+					"midpoints" : [ 767.313007831573486, 214.982456207275391, 880.5, 214.982456207275391 ],
 					"order" : 0,
 					"source" : [ "obj-8", 1 ]
 				}

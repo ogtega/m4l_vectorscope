@@ -2,7 +2,7 @@
 	"name" : "Vectorscope",
 	"version" : 1,
 	"creationdate" : 3829132017,
-	"modificationdate" : 3829271819,
+	"modificationdate" : 3829781629,
 	"viewrect" : [ 210.0, 282.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
